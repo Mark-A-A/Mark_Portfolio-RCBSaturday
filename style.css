@@ -3,10 +3,12 @@
 h1  { font-family: 'Kaushan Script', cursive; 
 font-size: 76px;
 text-align: center;
+color: teal;
 }
 
 h2 {  font-family: 'Noto Serif', serif; 
 font-size: 24px;
+text-align: center;
 }
 
 body {
@@ -14,6 +16,7 @@ body {
   font-family: 'Noto Serif', serif;
   font-size: 15px;
   background: #F5F5F5;
+  text-align: center;
   
 }
 
