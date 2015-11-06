@@ -17,7 +17,7 @@ font-size: 24px;
 }
 
 body {
-  background-image: url(concrete_seamless/concrete_seamless.png);
+  background-image: url('/concrete_seamless/concrete_seamless.png');
   font-family: 'Noto Serif', serif;
   font-size: 15px;
   background: #F5F5F5;
