@@ -1,4 +1,8 @@
 
+head {
+  vertical-align: center;
+  text-align: center;
+}
 
 h1  { font-family: 'Kaushan Script', cursive; 
 font-size: 76px;
@@ -12,7 +16,7 @@ text-align: center;
 }
 
 body {
-  background-image: url("paper.gif");
+  background-image: url("/concrete_seamless/concrete_seamless.png");
   font-family: 'Noto Serif', serif;
   font-size: 15px;
   background: #F5F5F5;
