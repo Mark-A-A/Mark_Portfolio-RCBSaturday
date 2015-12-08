@@ -1,20 +1,38 @@
 
+head {
+  vertical-align: center;
+  text-align: center;
+  width: 100%;
+}
 
 h1  { font-family: 'Kaushan Script', cursive; 
 font-size: 76px;
 text-align: center;
+color: black;
 }
 
 h2 {  font-family: 'Noto Serif', serif; 
 font-size: 24px;
+
 }
 
 body {
-  background-image: url("paper.gif");
+  background-image: url('../concrete_seamless/concrete_seamless.png');
   font-family: 'Noto Serif', serif;
   font-size: 15px;
-  background: #F5F5F5;
+  /* background: #F5F5F5;
+  */
+  text-align: center;
   
+}
+
+#social:hover {
+  opacity: .50;
+}
+
+img {
+  height: 150px,
+  width: 100%;
 }
 
 p > a {           
@@ -41,10 +59,13 @@ p > a {
 .description2 {
   color: black;
   text-align: center;
-  
 }
+
 .list {
   list-style-type: circle;
   text-align: left;
+}
 
+.contact {
+  text-align: left;
 }
