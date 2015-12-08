@@ -9,7 +9,7 @@ $(document).ready(function(){
       for(var i=0; i < repos.length; i++) {
         var newRepoURL = buildRepoList(repos[i]);
         console.log(newRepoURL);
-        $(".list-group").append("<p>"+newRepoURL+"</p>"); //Appended JSON to the page
+        $(".list-group").append(newRepoURL); //Appended JSON to the page
       }
     },
     error: function (jqXHR, textStatus, errorThrown){
