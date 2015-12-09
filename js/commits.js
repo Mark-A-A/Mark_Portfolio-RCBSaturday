@@ -9,8 +9,10 @@ $(document).ready(function(){
         url: $(this).attr("href"), //Event listener for links of repos
         success: function (commits) {
           console.log(commits);
+          $("tbody").empty();
           for( var i = 0; i < commits.length; i++){
             console.log(commits[i]);
+            $("tbody").append("<tr><td>test</td><td>test</td><td>test</td><td>test</td></tr>");
           }
         },
         error: function (jqXHR, textStatus, errorThrown){
