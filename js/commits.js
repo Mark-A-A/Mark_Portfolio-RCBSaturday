@@ -4,7 +4,7 @@ $(document).ready(function(){
     e.preventDefault(); //prevent the user from going to JSON commits page
     alert("Hey Committer - you clicked a link");
     
-      $.ajax({  //Adding ajax request based on the link of repo
+      $.ajax({  //Adding and making ajax  call request based on the link of repo for the commits
         type: "GET",
         url: $(this).attr("href"), //Event listener for links of repos
         success: function (commits) {
@@ -12,7 +12,8 @@ $(document).ready(function(){
           $("tbody").empty();
           for( var i = 0; i < commits.length; i++){
             console.log(commits[i]);
-            $("tbody").append("<tr><td>test</td><td>test</td><td>test</td><td>test</td></tr>");
+
+            $("tbody").append( buildTableRow(commits[i]) );  //Row Builder Callback
           }
         },
         error: function (jqXHR, textStatus, errorThrown){
@@ -20,7 +21,22 @@ $(document).ready(function(){
           console.log(textStatus);
           console.log(errorThrown);
         }
-     });
-    
+      });
+
+
+      function buildTableRow (commitData) {
+        debugger
+        var shaTD = $("<td>").append(commitData.sha);
+        var authorTD = $("<td>").append(commitData.author.login);
+        var messageTD = $("<td>").append(commitData.commit.message);
+        var dateTD =$("<td>").append(commitData.commit.author.date);
+        var newRow = ("<tr>");
+
+        return $(newRow).append(shaTD)
+          .append(authorTD)
+          .append(messageTD)
+          .append(dateTD);
+
+      };
   });
 });
