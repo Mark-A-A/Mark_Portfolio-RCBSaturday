@@ -32,7 +32,7 @@ $(document).ready(function(){
         var dateTD =$("<td>").append(commitData.commit.author.date);
         var newRow = ("<tr>");
 
-        return $(newRow).append(shaTD)
+        return $(newRow).append(shaTD) // Adding each cell with correct information from object
           .append(authorTD)
           .append(messageTD)
           .append(dateTD);
