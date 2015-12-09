@@ -25,7 +25,7 @@ $(document).ready(function(){
 
     //Format: https://api.github.com/repos/Mark-A-A/frontend-nanodegree-resume/commits{/sha}"
     
-    var commitsAPIUrl = "https://api.github.com/repos"; //API URL:
+    var commitsAPIUrl = "https://api.github.com/repos/"; //API URL:
     commitsAPIUrl += repoData.owner.login +"/";       //looking at object info and adding it
     commitsAPIUrl += repoData.name + "/commits";
 
