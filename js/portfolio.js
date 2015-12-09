@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  alert("it works!");
+  
   //Accessing my GitHub API
   $.ajax({
     type: "GET",
@@ -8,10 +8,10 @@ $(document).ready(function(){
       console.log("Holy Cow! Mark's GitHub API Endpoint Connection");
       
       for(var i=0; i < repos.length; i++) {
-        var newRepoURL = buildRepoList(repos[i]);
+        var newRepoURL = buildRepoURL (repos[i]);
         console.log(newRepoURL);
         $(".list-group").append(newRepoURL); //Appended JSON to the page
-        debugger
+        //debugger
       }
     },
     error: function (jqXHR, textStatus, errorThrown){
@@ -21,14 +21,17 @@ $(document).ready(function(){
     },
   })
 
-  function buildRepoList(repoData){
+
+  // Building the Repo URL
+  function buildRepoURL (repoData){
 
     //Format: https://api.github.com/repos/Mark-A-A/frontend-nanodegree-resume/commits{/sha}"
-    
+    // Creating the URL using the API format
     var commitsAPIUrl = "https://api.github.com/repos/"; //API URL:
     commitsAPIUrl += repoData.owner.login +"/";       //looking at object info and adding it
     commitsAPIUrl += repoData.name + "/commits";
 
+    // Making the link on the page
     var newLink = $("<a>")
       .attr("href", commitsAPIUrl)
       .addClass("list-group-item")
