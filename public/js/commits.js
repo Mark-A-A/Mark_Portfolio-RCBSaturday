@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 
       function buildTableRow (commitData) {
-        debugger
+        
         var shaTD = $("<td>").append(commitData.sha);
         var authorTD = $("<td>").append(commitData.author.login);
         var messageTD = $("<td>").append(commitData.commit.message);
@@ -37,6 +37,14 @@ $(document).ready(function(){
           .append(messageTD)
           .append(dateTD);
 
+
+      };
+
+      function buildGitHubCommitURL (commitData){
+        debugger
+        for (var = i; i < commitdata.length; i ++)
+          alert("it works:" + i)
+        
       };
   });
 });
