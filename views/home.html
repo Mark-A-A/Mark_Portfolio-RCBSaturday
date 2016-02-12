@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="../public/css/style.css">
-	<link rel="stylesheet" type="text/css" href="../public/css/3d-carousel.css">
+	
 	
 </head>
 
@@ -66,25 +66,30 @@
 		</section>
 	
 
-		<div class ="description">
-			<section >
+		<div class ="descriptions">
+			<section class ="description-about">
 			
 				<h2>About Mark</h2>
-				<p class ="show" id="about"> Born and raised in New York City. I recently graduated from Hunter College. I am now learning full stack ninja <br>web development. I am learning HTML, CSS, Git, JavaScript, MySQL, Node, Express, and much more. <br> Check back for more updates on my latest projects.
+				<!-- <h2 class="modal-title">About Me</h2>
+				      
+				 <p class ="show" id="about"> Born and raised in New York City. I recently graduated from Hunter College. I am now learning full stack ninja <br>web development. I am learning HTML, CSS, Git, JavaScript, MySQL, Node, Express, and much more. <br> Check back for more updates on my latest projects.
 				<br>
-					<a href="/blog" target="_blank">
-					Read My Blog
-					</a>
+				<a href="/blog" target="_blank">Read My Blog</a>
 				</p>
-				
+				 -->
+				 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutMark" data-whatever="About Mark">About Me</button>
+		
 			</section>
 			
 			<br><br>
 			
-			<section class="description2">
+			<section class="description-mission">
 				<h2> My Mission</h2>
-				<p> It is my intention to become a skilled full stack web developer. I want to grow and expand the skills I have, then apply them. <br> I want to help anyone in my network grow and succeed, especially the companies or groups I work with. 
+				<!-- <p> It is my intention to become a skilled full stack web developer. I want to grow and expand the skills I have, then apply them. <br> I want to help anyone in my network grow and succeed, especially the companies or groups I work with. 
 				</p>
+ -->
+ 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutMark" data-whatever="My Mission">My Mission</button>
+				
 			</section>
 		</div>
 		<br>
@@ -92,11 +97,9 @@
 
 		<section class="list">
 			<h2> Education </h2>
-			<ul>
-				<li>Rutgers Coding Bootcamp</li>
-				<li>CUNY Hunter College</li>
-				<li>Bronx High School of Science</li>
-			</ul>
+			
+
+			
 
 			<h2> Experience</h2>
 			<ul>
@@ -113,6 +116,8 @@
 						<li>Sales and Marketing</li>
 					</ul>
 			</ul>
+
+			
 		
 			<h2> Skills</h2>
 			<ul>
@@ -131,6 +136,31 @@
 		<br>
 
 		</section>
+
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutMark" data-whatever="Education">Education</button>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutMark" data-whatever="My Mission">My Mission</button>
+		
+		...more buttons...
+
+		<div class="modal fade" id="aboutMark" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+		      </div>
+		      <div class="modal-body">
+		      <h4>
+		      	
+		      </h4>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 		<!-- Carousel for Interests -->
 		<div class="carousel-section">
@@ -178,14 +208,14 @@
 		    <div class="item">
 		      <img src="http://www.exploringdatascience.com/wp-content/uploads/2014/02/The-Data-Science-Clock-v1.1-Simple1.png" alt="Data Science">
 		      <div class="carousel-caption">
-		        <h3>Data Science</h3>
+		        <h2>Data Science</h2>
 		      </div>
 		    </div>
 
 		     <div class="item">
 		      <img  src="../pictures/basketball-1081882.jpg" alt="basketball ball is life">
 		      <div class="carousel-caption">
-		        <h3>Basketball</h3>
+		        <h2>Basketball</h2>
 		        <p>Ball is Life</p>
    					
 		      </div>
@@ -194,7 +224,15 @@
 		    <div class="item">
 		      <img  src="../pictures/rock climbing-640310.jpg" alt="rock climbing">
 		      <div class="carousel-caption">
-		        <h3>Rock Climbing</h3>
+		        <h2>Rock Climbing</h2>
+   					
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img  src="../pictures/movies-Football_match_in_cinema.jpg" alt="movies">
+		      <div class="carousel-caption">
+		        <h2>Movies</h2>
    					
 		      </div>
 		    </div>
@@ -202,14 +240,14 @@
 		    <div class="item">
 		      <img  src="../pictures/music-unsplash-kitsune-4.jpg" alt="music">
 		      <div class="carousel-caption">
-		        <h3>Music</h3>
+		        <h2>Music</h2>
    					
 		      </div>
 		    </div>
 		    <div class="item">
 		      <img  src="../pictures/good-food.jpeg" alt="food">
 		      <div class="carousel-caption">
-		        <h3>Good Food</h3>
+		        <h2>Good Food</h2>
    					
 		      </div>
 		    </div>
@@ -217,7 +255,7 @@
 		    <div class="item">
 		      <img src="http://s1.cdn.autoevolution.com/images/news/gallery/toyota-supra-gets-powered-by-custom-tundra-engine-videophoto-gallery_9.png" alt="Cars - Toyota Supra">
 		      <div class="carousel-caption">
-		        <h3>Cars</h3>
+		        <h2>Cars</h2>
 		      </div>
 		    </div>
 		   
@@ -274,7 +312,7 @@
 		    </div>
 
 		    <!-- Add Social links, address, etc etc -->
-				<div class="navbar-body">
+				<!-- <div class="navbar-body">                               DELETE THIS LATER
 					<ul class="nav navbar-nav navbar-right">
 		        <li>
 		        	<a href="mailto:markawai01@gmail.com" target="_blank" id="social"><img class="google-social-button" src="http://www.clarkson.edu/_site_support/images/Communication-gmail-icon-11.png" alt="Mark's Email" width="52" height="42" border="0"></a>
@@ -292,7 +330,7 @@
 						</li>
 		       
 		      </ul>
-				</div>
+				</div> -->
 
   		</div>
 		</nav>
@@ -302,12 +340,13 @@
         
  
       </div>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../public/js/home-js.js"></script>
-	<script type="text/javascript" src="../public/js/3d-carousel-js.js"></script>
-
 	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="../public/js/home-js.js"></script>
+
 </body>
 </html>
 
