@@ -1,6 +1,7 @@
 var express = require("express");
+var session = require("express-session");
 var app = express();
-var PORT = 8080;
+var PORT =  process.env.PORT || 8080;
 
  
 app.use('/js', express.static('public/js'));    //static routes
