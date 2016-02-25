@@ -46,7 +46,7 @@ $('#aboutMark').on('show.bs.modal', function (event) {
     case "My Mission":
       modal.find('.modal-title').text('The Mission');
   
-      modal.find('.modal-body h4').text("<p>This is a paragraph about Mark's Mission</p><p> It is my intention to become a skilled full stack web developer. I want to grow and expand the skills I have, then apply them. <br> I want to help anyone in my network grow and succeed, especially the companies or groups I work with. </p>");
+      modal.find('.modal-body h4').text("It is my intention to become a skilled full stack web developer. I want to grow and expand the skills I have, then apply them.  I want to help anyone in my network grow and succeed, especially the companies or groups I work with.");
 
 
       break;
@@ -54,11 +54,19 @@ $('#aboutMark').on('show.bs.modal', function (event) {
     case "Education":
       modal.find('.modal-title').text('Education');
   
-      modal.find('.modal-body h4').text("<ul>
-        <li>Rutgers Coding Bootcamp</li>
-        <li>CUNY Hunter College</li>
-        <li>Bronx High School of Science</li>
-      </ul>");
+      modal.find('.modal-body h4').text("<ul><li>Rutgers Coding Bootcamp</li><li>CUNY Hunter College</li><li>Bronx High School of Science</li></ul>");
+      break; 
+
+    case "Skills":
+      modal.find('.modal-title').text('Skills');
+  
+      modal.find('.modal-body h4').text(" <ul><li>JavaScript</li><li>Financial Modelling and Analysis</li><li>Mathematics</li><li>Accounting</li></ul>");
+      break;
+
+    case "Experience":
+      modal.find('.modal-title').text('Skills');
+  
+      modal.find('.modal-body h4').text(" <ul><li>JavaScript</li><li>Financial Modelling and Analysis</li><li>Mathematics</li><li>Accounting</li></ul>");
       break;
 
   }
