@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Mark-A-A/Mark_Portfolio-RCBSaturday#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "method-override": "^2.3.5"
   }
 }
