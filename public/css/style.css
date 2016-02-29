@@ -32,7 +32,11 @@ p > a {
   color: blue;
   font-size: 17px;
   font-weight: bold; 
-}  
+}
+
+li {
+  text-align: left;
+}
 
 #social:hover {
   opacity: .50;
@@ -53,6 +57,7 @@ p > a {
     -moz-column-gap: 40px; /* Firefox */
     column-gap: 40px;
 }
+
 .description2 {
   color: black;
   text-align: center;
