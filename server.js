@@ -3,9 +3,7 @@ var session = require("express-session");
 var app = express();
 var PORT =  process.env.PORT || 8080;
 
- 
-app.use('/js', express.static('public/js'));    //static routes
-app.use('/css', express.static('public/css'));
+app.use(express.static('public'));    //static routes
 
 app.get('/', function (req, res) {                    //Home Page response
   console.log("Hello client user..On the homepage");
