@@ -54,19 +54,19 @@ $('#aboutMark').on('show.bs.modal', function (event) {
     case "Education":
       modal.find('.modal-title').text('Education');
   
-      modal.find('.modal-body h4').text("<ul><li>Rutgers Coding Bootcamp</li><li>CUNY Hunter College</li><li>Bronx High School of Science</li></ul>");
+      modal.find('.modal-body h4').html("<ul><li>Rutgers Coding Bootcamp</li><li>CUNY Hunter College</li><li>Bronx High School of Science</li></ul>");
       break; 
 
     case "Skills":
       modal.find('.modal-title').text('Skills');
   
-      modal.find('.modal-body h4').text(" <ul><li>JavaScript</li><li>Financial Modelling and Analysis</li><li>Mathematics</li><li>Accounting</li></ul>");
+      modal.find('.modal-body h4').html(" <ul><li>JavaScript</li><li>Financial Modelling and Analysis</li><li>Mathematics</li><li>Accounting</li></ul>");
       break;
 
     case "Experience":
-      modal.find('.modal-title').text('Skills');
+      modal.find('.modal-title').text('Experience');
   
-      modal.find('.modal-body h4').text(" <ul><li>JavaScript</li><li>Financial Modelling and Analysis</li><li>Mathematics</li><li>Accounting</li></ul>");
+      modal.find('.modal-body h4').html("<ul><li>Citi Habitats</li><ul><li>Specialized in relocation to Manhattan</li><li>Rental and Sales</li><li>Provided excellent customer service</li></ul><li>Awai Real Estate Solutions</li><ul><li>Residential Real Estate Investments</li><li>Deal Analysis including Acquisition and Exit Strategy</li><li>Sales and Marketing</li></ul></ul>");
       break;
 
   }
