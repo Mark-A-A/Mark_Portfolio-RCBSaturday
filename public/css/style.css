@@ -1,8 +1,35 @@
 /*Main*/
-head {
-  vertical-align: center;
-  text-align: center;
+
+.navbar {
+  margin: 0 auto;
   width: 100%;
+  height: 80px;
+  /*z-index: 10;*/
+  padding-top: 10px;
+  background-color: #3F7CAC;
+}
+
+.navbar-brand {
+  margin: 0 auto;
+}
+.navbar-collapse {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+#banner {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/67/NYC_Top_of_the_Rock_Pano_banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  /*position: relative;*/
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#banner > h1 {
+  color: white;
+   text-shadow: 2px 2px #ff0000;
 }
 
 h1  { 
@@ -19,7 +46,7 @@ h2 {
 }
 
 body {
-  background-image: url('./concrete_seamless/concrete_seamless.png');
+  background-image: url('../pictures/concrete_seamless/concrete_seamless.png');
   font-family: 'Noto Serif', serif;
   font-size: 15px;
   /* background: #F5F5F5;
@@ -36,6 +63,10 @@ p > a {
 
 li {
   text-align: left;
+}
+
+.about-mark {
+  position: relative;
 }
 
 #social:hover {
@@ -81,13 +112,10 @@ img {
 }
 */
 
-#banner {
-  height: 150px;
-  width: 100%;
-}
+
 
 .google-social-button{
-  width: 42px;
+  width: 48px;
   height: 42px;
   border: 0px;
 }
@@ -96,6 +124,7 @@ img {
   width: 42px;
   height: 42px;
   border: 0px;
+  border-radius: 3px; 
 }
 
 .about {
@@ -131,9 +160,12 @@ img {
   
 }
 
-.footer p{
+.footer {
+  position: relative;
+}
+.footer p { 
   margin: 0 auto;
-  padding-top: 10px;*/
+  padding-top: 10px;
 }
 
 .about {
