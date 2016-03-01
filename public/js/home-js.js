@@ -1,4 +1,4 @@
-debugger
+//debugger
 
 $('.carousel').carousel({
   interval: 2000,
