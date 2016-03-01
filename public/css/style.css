@@ -6,16 +6,35 @@
   height: 80px;
   /*z-index: 10;*/
   padding-top: 10px;
-  background-color: #3F7CAC;
+  background-color: ADADAD; /* #3F7CAC*/
 }
 
 .navbar-brand {
   margin: 0 auto;
 }
+
+.navbar-fixed-top {
+  top: 0;
+}
 .navbar-collapse {
   margin: 0 auto;
   padding-bottom: 10px;
 }
+
+
+.google-social-button{
+  width: 48px;
+  height: 42px;
+  border: 0px;
+}
+
+.social-button{
+  width: 42px;
+  height: 42px;
+  border: 0px;
+  border-radius: 3px; 
+}
+
 
 #banner {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/67/NYC_Top_of_the_Rock_Pano_banner.jpg");
@@ -114,19 +133,6 @@ img {
 
 
 
-.google-social-button{
-  width: 48px;
-  height: 42px;
-  border: 0px;
-}
-
-.social-button{
-  width: 42px;
-  height: 42px;
-  border: 0px;
-  border-radius: 3px; 
-}
-
 .about {
   margin: 10px;
 }
@@ -155,14 +161,14 @@ img {
   transform: translateY(-50%);
 }
 
-.footer img{
-  margin: 0 auto;
-  
-}
-
 .footer {
   position: relative;
 }
+
+.footer img{
+  margin: 0 auto;
+}
+
 .footer p { 
   margin: 0 auto;
   padding-top: 10px;
