@@ -22,7 +22,7 @@ $(".item").click(function(){
 //$('#myModal').modal(options)
 
 $('#aboutMark').on('show.bs.modal', function (event) {
-  debugger
+  //debugger
   console.log(event);
   var button = $(event.relatedTarget) // Button that triggered the modal
   console.log(button);
