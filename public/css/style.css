@@ -1,12 +1,17 @@
 /*Main*/
 
+header {
+  background-image: url('../pictures/concrete_seamless/concrete_seamless.png');
+  z-index: 1000;
+}
 .navbar {
   margin: 0 auto;
   width: 100%;
   height: 80px;
   /*z-index: 10;*/
   padding-top: 10px;
-  background-color: ADADAD; /* #3F7CAC*/
+  /*background-color: ADADAD; /* #3F7CAC*/
+
 }
 
 .navbar-brand {
@@ -40,10 +45,12 @@
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/67/NYC_Top_of_the_Rock_Pano_banner.jpg");
   background-size: cover;
   background-position: center center;
-  /*position: relative;*/
+  position: relative;
   height: 300px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 85px;
+  margin-top: 67px;
 }
 
 #banner > h1 {
@@ -74,6 +81,13 @@ body {
   
 }
 
+#about-mark-buttons {
+  position: relative;
+}
+
+.about-mark {
+  position: relative;
+}
 p > a {           
   color: blue;
   font-size: 17px;
@@ -84,9 +98,7 @@ li {
   text-align: left;
 }
 
-.about-mark {
-  position: relative;
-}
+
 
 #social:hover {
   opacity: .50;
