@@ -1,9 +1,7 @@
 //Angular 
 
-var portfolioApp = angular.module("portfolioApp", ['ui.router');
+var portfolioApp = angular.module("portfolioApp", ['ui.router']);
 //var portfolioApp = angular.module("portfolioApp", ['ui.router', 'mainController', 'searchController']);
-
-
 
 
 portfolioApp.config( function($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -18,6 +16,11 @@ portfolioApp.config( function($stateProvider, $urlRouterProvider, $locationProvi
       //controller: 'mainController'
     })
 
+    .state('my_portfolio', {
+      url: '/portfolio',
+      templateUrl: 'partials/my_portfolio.html'
+      //controller: 'contactController'
+    })
 
     .state('contact', {
       url: '/contact',
@@ -31,6 +34,6 @@ portfolioApp.config( function($stateProvider, $urlRouterProvider, $locationProvi
       //controller: 'aboutController'
     });
 
+    //$locationProvider.html5Mode(true);
 });
   
-
