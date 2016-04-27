@@ -1,32 +1,50 @@
 var express = require("express");
 var session = require("express-session");
-var app = express();
-var PORT =  process.env.PORT || 8080;
-
-app.use(express.static('public'));    //static routes
-
-app.get('/', function (req, res) {                    //Home Page response
-  console.log("Hello client user..On the homepage");
-  console.log(`Current directory: ${process.cwd()}`);
-  //res.send('Hello World');
-  res.sendFile(process.cwd() + '/views/home.html');
-})
-
-app.get('/blog', function (req, res) {
-  console.log("On the blog page.");
-  console.log(`Current directory: ${process.cwd()}`);
-  //res.send('Hello World');
-  res.sendFile(process.cwd() + '/views/blog.html');
-});
-
-app.get('/portfolio', function (req, res) {
-  console.log("On the Portfolio page.");
-  console.log(`Current directory: ${process.cwd()}`);
-  //res.send('Hello World');
-  res.sendFile(process.cwd() + '/views/my_portfolio.html');
-});
-
  
+// var favicon       = require("serve-favicon");
+var logger        = require("morgan");
+//var cookieParser  = require('cookie-parser');
+var bodyParser    = require('body-parser');
+
+var PORT          = process.env.PORT || 1738;
+
+var db            = require('./config/db.js');
+
+var router        = require('./controller/routes.js');
+
+var app           = express();    //Initializing Express
+
+//Directories
+app.use(express.static(__dirname + "/public"));
+app.use('/public', express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public/views"));
+app.use(express.static(__dirname + "/public/views/partials"));
+
+// app.use(favicon(__dirname + '/public/favicon.ico'));
+
+//Middleware
+app.use(logger('dev')); // log every request to the console
+
+//app.use(cookieParser());
+
+app.use(bodyParser.urlencoded({ extended: false }))
+
+app.use(session({  
+  key: 'mark-a-portfolio',
+  secret: 'keyboard Markat', 
+  cookie: {
+    secure: false,
+    maxAge: 60000 
+  },
+  saveUninitialized: true,
+  resave: true 
+}));
+
+
+//Routing
+app.get('*', router);
+app.get('/', router);
+
 app.listen(PORT, function(){
-  console.log("Listening on Port %s", PORT);
+  console.log("Portfolio is Listening on Port %s", PORT);
 });

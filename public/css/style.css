@@ -1,8 +1,61 @@
 /*Main*/
-head {
-  vertical-align: center;
-  text-align: center;
+
+header {
+  background-image: url('../pictures/concrete_seamless/concrete_seamless.png');
+  z-index: 1000;
+}
+.navbar {
+  margin: 0 auto;
   width: 100%;
+  height: 80px;
+  /*z-index: 10;*/
+  padding-top: 10px;
+  /*background-color: ADADAD; /* #3F7CAC*/
+
+}
+
+.navbar-brand {
+  margin: 0 auto;
+}
+
+.navbar-fixed-top {
+  top: 0;
+}
+.navbar-collapse {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+
+.google-social-button{
+  width: 48px;
+  height: 42px;
+  border: 0px;
+}
+
+.social-button{
+  width: 42px;
+  height: 42px;
+  border: 0px;
+  border-radius: 3px; 
+}
+
+
+#banner {
+  background-image: url("https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d777797e2462dbf385043a4361644a24");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 85px;
+  margin-top: 67px;
+}
+
+#banner > h1 {
+  color: white;
+   text-shadow: 2px 2px #C37547;
 }
 
 h1  { 
@@ -19,7 +72,7 @@ h2 {
 }
 
 body {
-  background-image: url('./concrete_seamless/concrete_seamless.png');
+  background-image: url('../pictures/concrete_seamless/concrete_seamless.png');
   font-family: 'Noto Serif', serif;
   font-size: 15px;
   /* background: #F5F5F5;
@@ -28,6 +81,13 @@ body {
   
 }
 
+#about-mark-buttons {
+  position: relative;
+}
+
+.about-mark {
+  position: relative;
+}
 p > a {           
   color: blue;
   font-size: 17px;
@@ -37,6 +97,8 @@ p > a {
 li {
   text-align: left;
 }
+
+
 
 #social:hover {
   opacity: .50;
@@ -81,25 +143,12 @@ img {
 }
 */
 
-#banner {
-  height: 150px;
-  width: 100%;
-}
 
-.google-social-button{
-  width: 42px;
-  height: 42px;
-  border: 0px;
-}
-
-.social-button{
-  width: 42px;
-  height: 42px;
-  border: 0px;
-}
 
 .about {
   margin: 10px;
+  color: white;
+  background-color: #AAABAF;
 }
 
 
@@ -126,14 +175,17 @@ img {
   transform: translateY(-50%);
 }
 
-.footer img{
-  margin: 0 auto;
-  
+.footer {
+  position: relative;
 }
 
-.footer p{
+.footer img{
   margin: 0 auto;
-  padding-top: 10px;*/
+}
+
+.footer p { 
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
 .about {

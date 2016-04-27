@@ -1,4 +1,4 @@
-debugger
+//debugger
 
 $('.carousel').carousel({
   interval: 2000,
@@ -22,7 +22,7 @@ $(".item").click(function(){
 //$('#myModal').modal(options)
 
 $('#aboutMark').on('show.bs.modal', function (event) {
-  debugger
+  //debugger
   console.log(event);
   var button = $(event.relatedTarget) // Button that triggered the modal
   console.log(button);
@@ -57,10 +57,10 @@ $('#aboutMark').on('show.bs.modal', function (event) {
       modal.find('.modal-body h4').html("<ul><li>Rutgers Coding Bootcamp</li><li>CUNY Hunter College</li><li>Bronx High School of Science</li></ul>");
       break; 
 
-    case "Skills":
+    case "My Skills":
       modal.find('.modal-title').text('Skills');
   
-      modal.find('.modal-body h4').html(" <ul><li>JavaScript</li><li>Financial Modelling and Analysis</li><li>Mathematics</li><li>Accounting</li></ul>");
+      modal.find('.modal-body h4').html(" <ul><li>JavaScript</li><li>Node</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>Financial Modelling and Analysis</li><li>Mathematics</li><li>Accounting</li></ul>");
       break;
 
     case "Experience":
