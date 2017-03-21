@@ -12,7 +12,8 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles-main.css">  
+  <link rel="stylesheet" type="text/css" href="/css/style-mark.css">
 
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
@@ -28,21 +29,23 @@ https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-animate.js"></sc
 </head>
 
 <body>
+  
+<!--
+-->
 
-  <div class="header">
-    <nav class="navbar-fixed-top navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-          <a class="navbar-brand" href="#">Mark Awai</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <div ui-view></div>
+<!--
+  <h1>Sanity Check:s 2 +2 should equal ...{{2+2}}</h1>
+
+    <input type="text" ng-model='yourName' placeholder='Test Angular'>
+    <h2>{{ yourName }}</h2> 
+  -->
+
+<footer>
+  
+      <div class="container">
+        
+        <div class="row">
           <ul class="nav navbar-nav">
             <li class="active"><a href="/blog">Blog <span class="sr-only">(current)</span></a></li>
             <!--  <li><a href="">About</a></li>    -->
@@ -65,43 +68,22 @@ https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-animate.js"></sc
             </li>
           </ul>
         </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- end of container -->
-    </nav>
-  </div>
-  <!-- end of header   -->
 
+          <div class="row">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+          <p>&copy; 2016 Mark Awai  &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 
-  <div class="row" id="banner">
-    <h1> Mark Awai</h1>
-  </div>
-<!--        Sanity Check 2 +2 shoudl equal {{2+2}}
-    <input type="text" ng-model='yourName' placeholder='Test Angular'>
-    <h1>{{ yourName }}</h1> -->
-
-     <div ui-view></div>
-    
-
-
-
- 
-
-  <div class="footer">
-    <nav class="navbar-static-bottom navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <p>&copy; Mark Awai </p>
-          </a>
         </div>
+          </div>
+          
+        
+      <!-- end of container -->
+    
+</footer>
+  
+  
 
-      </div>
-
-      <!-- <p>| Privacy | Terms</p>-->
-
-    </nav>
-  </div>
+    
 
   <script type="text/javascript" src="../public/ang-controllers/app.js"></script>
   <script type="text/javascript" src="../public/ang-controllers/main.js"></script>

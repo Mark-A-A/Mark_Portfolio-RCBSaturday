@@ -12,7 +12,7 @@ portfolioApp.config( function($stateProvider, $urlRouterProvider, $locationProvi
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'partials/home.html',
+      templateUrl: 'partials/homeV2.html',
       //controller: 'mainController'
     })
 
