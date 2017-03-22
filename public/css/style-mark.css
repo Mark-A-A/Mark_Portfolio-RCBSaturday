@@ -16,7 +16,7 @@ body {
 }
 
 #the-navbar {
- 
+
   margin: 0 auto;
   width: 100%;
   height: 80px;
@@ -40,8 +40,8 @@ body {
   background-position: center center;
   position: relative;
   padding: 60px;
-  margin-top: 80px;
-  margin-bottom: 30px;
+  /*margin-top: 80px;*/
+  /*margin-bottom: 30px;*/
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
@@ -55,9 +55,9 @@ body {
 
 .hero-unit h1 {
   margin-bottom: 0;
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
+  /*font-size: 60px;*/
+  /*line-height: 1;*/
+  /*letter-spacing: -1px;*/
   color: white;
   text-shadow: 2px 2px #C37547;
 }
@@ -71,12 +71,18 @@ body {
   line-height: 30px;
 }
 
-hr {
-  border-top: 1px solid #333;
+.parallax img {
+  width: 100%;
+  height: inherit;
 }
 
+/*
+hr {
+  border-top: 1px solid #333;
+}*/
 
-#projects-portfolio {
+
+/*#projects-portfolio {
   text-align: center;
   margin: 0 auto;
 
@@ -91,15 +97,13 @@ hr {
   width: 42px;
   height: 42px;
   border: 0px;
-  border-radius: 3px; 
-}
+  border-radius: 3px;
+}*/
 
 footer {
-  margin-top: 80px;
-  position: relative;
-  bottom: 0;
-  margin: 0 auto;
-  background-color: #f2c18a;
+  /*margin-top: 80px;*/
+  /*position: relative;*/
+  /*bottom: 0;*/
+  /*margin: 0 auto;*/
+  /*background-color: #f2c18a;*/
 }
-
-
