@@ -3,7 +3,10 @@
 
 
 
-
+$(document).ready(function(){
+   console.log("loaded")
+     $('.carousel.carousel-slider').carousel({fullWidth: true});
+ });
 
 
 
