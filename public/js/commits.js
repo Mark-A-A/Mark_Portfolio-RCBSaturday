@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  
+
   $(document).on("click", "a", function(e){
     e.preventDefault(); //prevent the user from going to JSON commits page
     alert("Hey Committer - you clicked a link");
-    
+
       $.ajax({  //Adding and making ajax  call request based on the link of repo for the commits
         type: "GET",
         url: $(this).attr("href"), //Event listener for links of repos
@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 
       function buildTableRow (commitData) {
-        
+
         var shaTD = $("<td>").append(commitData.sha);
         var authorTD = $("<td>").append(commitData.author.login);
         var messageTD = $("<td>").append(commitData.commit.message);
@@ -44,7 +44,7 @@ $(document).ready(function(){
         debugger
         for (var = i; i < commitdata.length; i ++)
           alert("it works:" + i)
-        
+
       };
   });
 });
