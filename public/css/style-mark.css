@@ -1,11 +1,18 @@
 /*Main*/
+@media only screen and (min-width: 993px){
+  .container {
+    width: 80%;
+  }
+
+}
+
 
 header {
   z-index: 1000;
 }
 
 body {
-  background-image: url('../pictures/concrete_seamless/concrete_seamless.png');
+  background-image: url('../img/concrete_seamless/concrete_seamless.png');
   z-index: 1000;
   padding-bottom: 0;
 }
@@ -34,8 +41,8 @@ body {
 }
 
 .hero-unit {
-  background: url('../pictures/NASA-photo-ny.jpeg');;
-  background-image: url("https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d777797e2462dbf385043a4361644a24");
+  background: url('../img/NASA-photo-ny.jpeg');;
+  /*background-image: url("https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d777797e2462dbf385043a4361644a24");*/
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -59,7 +66,8 @@ body {
   /*line-height: 1;*/
   /*letter-spacing: -1px;*/
   color: white;
-  text-shadow: 2px 2px #C37547;
+  /*text-shadow: 2px 2px #C37547;*/
+  text-shadow: 2px 2px #a1b191;
 }
 
 .hero-unit p {
@@ -83,6 +91,13 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.carousel.carousel-slider .carousel-item h4{
+  position: absolute;
+  left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0)
 }
 
 /*
@@ -110,9 +125,17 @@ hr {
 }*/
 
 footer {
+  color: black;
+  background-color: gray;
+  background-image: url('../img/concrete_seamless/concrete_seamless.png');
   /*margin-top: 80px;*/
   /*position: relative;*/
   /*bottom: 0;*/
   /*margin: 0 auto;*/
   /*background-color: #f2c18a;*/
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
 }

@@ -67,7 +67,7 @@ a {
 .card-content a:hover {
     color: #2196F3;
 }
-#work, #team {
+#work, #team, #skills, #resume {
     background: rgb(247, 247, 247);
 }
 .text_pink {
