@@ -84,6 +84,13 @@ body {
   height: inherit;
 }
 
+.carousel.carousel-slider {
+  height: 575px !important;
+}
+
+.carousel .carousel-item img {
+  height: inherit;
+}
 .carousel.carousel-slider .carousel-item {
     width: 100%;
     height: 100%;
