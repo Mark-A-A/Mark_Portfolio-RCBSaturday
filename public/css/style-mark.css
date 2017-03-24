@@ -34,6 +34,31 @@ body {
   position: fixed;
 }
 
+.side-nav li {
+    float: none;
+    padding: 0 15px;
+}
+.side-nav a {
+    color: #444;
+    display: block;
+    font-size: 1rem;
+    height: 64px;
+    line-height: 64px;
+    padding: 0 15px;
+}
+.side-nav li:hover, .side-nav li.active {
+    background-color: #ddd;
+}
+nav ul li {
+    -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    -ms-transition: background-color .3s;
+    transition: background-color .3s;
+    float: left;
+    padding: 0;
+}
+
 .navbar .nav > li > a {
   @elementHeight: 20px;
   padding: ((@navbarHeight - @elementHeight) / 2 - 1) 10px ((@navbarHeight - @elementHeight) / 2 + 1);
@@ -85,7 +110,7 @@ body {
 }
 
 .carousel.carousel-slider {
-  height: 575px !important;
+  height: 575px;
 }
 
 .carousel .carousel-item img {
@@ -107,6 +132,17 @@ body {
     transform: translate(-50%, 0)
 }
 
+
+@media screen and (max-width: 600px) {
+  .carousel.carousel-slider {
+    height: 375px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 850px) {
+  .carousel.carousel-slider {
+    height: 450px;
+  }
+}
 /*
 hr {
   border-top: 1px solid #333;
@@ -130,6 +166,18 @@ hr {
   border: 0px;
   border-radius: 3px;
 }*/
+
+.devicon-plain {
+  max-width: 150px;
+}
+
+.devicon-plain path {
+  /*fill: black;*/
+}
+
+.devicon-react path {
+  fill: #09d9fe;
+}
 
 footer {
   color: black;
