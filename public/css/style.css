@@ -223,11 +223,10 @@ nav a.button-collapse {
     text-align: center;
     margin-top: 20px;
 }
-.card-avatar
-img {
+.card-avatar img {
     height: 150px;
     width: 150px;
-    border-radius: 75px;
+    border-radius: 0px;
 }
 .card-avatar .card-content {
     text-align: center;
