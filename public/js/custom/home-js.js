@@ -4,7 +4,12 @@
 
 
 $(document).ready(function(){
+
+
    console.log("loaded")
+
+   $('.parallax').parallax();
+       
 
      $('.carousel.carousel-slider').carousel({fullWidth: true});
      autoplay()
