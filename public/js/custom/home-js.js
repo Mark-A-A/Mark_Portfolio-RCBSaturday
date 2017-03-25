@@ -9,14 +9,30 @@ $(document).ready(function(){
    console.log("loaded")
 
    $('.parallax').parallax();
-       
+
 
      $('.carousel.carousel-slider').carousel({fullWidth: true});
-     autoplay()
-      function autoplay() {
-          $('.carousel').carousel('next');
-          setTimeout(autoplay, 4500);
-      }
+      var int;
+      var carousel_interval = 3000;
+
+     function run(){
+         int = setInterval(function()
+         {
+             $('.carousel').carousel('next');
+         }, carousel_interval);
+     }
+     function stop(){
+     clearInterval(int);
+     }
+     $('.carousel').hover(stop, run);
+     $('.carousel-fixed-item.with-indicators.left').on("click", function(){
+      //   console.log('clicked-next')
+         $('.carousel').carousel('prev');
+     });
+     $('.carousel-fixed-item.with-indicators.right').on("click", function(){
+      //   console.log('clicked-previous')
+         $('.carousel').carousel('next');
+     });
  });
 
 
