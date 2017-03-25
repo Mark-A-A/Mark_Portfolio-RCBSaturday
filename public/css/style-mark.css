@@ -104,6 +104,11 @@ nav ul li {
   line-height: 30px;
 }
 
+
+#intro-text {
+  /*padding: 4rem 0;*/
+  padding-bottom: 4em;
+}
 .parallax img {
   width: 100%;
   height: inherit;
@@ -169,6 +174,10 @@ hr {
 
 .devicon-plain {
   max-width: 150px;
+}
+.devicon-plain-2techs {
+  max-width: 100px;
+  height: 150px;
 }
 
 .devicon-plain path {
