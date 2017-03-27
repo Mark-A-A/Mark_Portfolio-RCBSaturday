@@ -12,18 +12,6 @@ $(document).ready(function(){
 
 
      $('.carousel.carousel-slider').carousel({fullWidth: true});
-
-     $('.carousel-fixed-item.left').on("click", function(){
-        console.log('clicked-next');
-         $('.carousel').carousel('prev');
-         // run();
-     });
-
-     $('.carousel-fixed-item.right').on("click", function(){
-        console.log('clicked-previous')
-         $('.carousel').carousel('next');
-         // run();
-     });
       var int;
       var carousel_interval = 3000;
 
@@ -43,6 +31,28 @@ $(document).ready(function(){
      run();
    //   stop();
 
+   $('.carousel-fixed-item.left').on("click", function(){
+     console.log('clicked-next');
+      $('.carousel').carousel('prev');
+      // run();
+   });
+
+   $('.carousel-fixed-item.right').on("click", function(){
+     console.log('clicked-previous')
+      $('.carousel').carousel('next');
+      // run();
+   });
+   $('.carousel-fixed-item.left').on("vclick", function(){
+     alert('clicked-next');
+      $('.carousel').carousel('prev');
+      // run();
+   });
+
+   $('.carousel-fixed-item.right').on("vclick", function(){
+     alert('clicked-previous')
+      $('.carousel').carousel('next');
+      // run();
+   });
 
  });
 
