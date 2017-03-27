@@ -6,29 +6,29 @@
 $(document).ready(function(){
 
 
-   console.log("loaded")
+console.log("loaded")
 
    $('.parallax').parallax();
 
 
-     $('.carousel.carousel-slider').carousel({fullWidth: true});
-      var int;
-      var carousel_interval = 3000;
+   $('.carousel.carousel-slider').carousel({fullWidth: true});
+   var int;
+   var carousel_interval = 3000;
 
-     function run(){
-        console.log("carousel running")
-         int = setInterval(function() {
-           $('.carousel').carousel('next');
-         }, carousel_interval);
-     };
+   function run(){
+     console.log("carousel running")
+      int = setInterval(function() {
+        $('.carousel').carousel('next');
+      }, carousel_interval);
+   };
 
-     function stop(){
-        clearInterval(int);
-     };
+   function stop(){
+     clearInterval(int);
+   };
 
-     $('.carousel').hover(stop, run);
+   $('.carousel').hover(stop, run);
 
-     run();
+   run();
    //   stop();
 
    $('.carousel-fixed-item.left').on("click", function(){
@@ -38,18 +38,19 @@ $(document).ready(function(){
    });
 
    $('.carousel-fixed-item.right').on("click", function(){
-     console.log('clicked-previous')
+     console.log('clicked-next')
       $('.carousel').carousel('next');
       // run();
    });
+
    $('.carousel-fixed-item.left').on("vclick", function(){
-     alert('clicked-next');
+     alert('clicked-prev');
       $('.carousel').carousel('prev');
       // run();
    });
 
    $('.carousel-fixed-item.right').on("vclick", function(){
-     alert('clicked-previous')
+     alert('clicked-next');
       $('.carousel').carousel('next');
       // run();
    });
