@@ -244,17 +244,21 @@ nav ul li {
     height: 220px;
   }
 
-  .card.2-techs .waves-effect{
+  .card .waves-effect{
+    padding: 25px;
+  }
+  .card.two-techs .waves-effect{
     padding: 5px 0;
   }
 
-  }
   .devicon-plain-2techs {
     float: left;
     max-width: 100px;
 
     width: 75px;
   }
+
+
 
 }
 
