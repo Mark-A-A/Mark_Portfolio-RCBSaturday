@@ -29,15 +29,15 @@ $(document).ready(function(){
      $('.carousel').hover(stop, run);
 
      run();
-     stop();
+   //   stop();
 
      $('.carousel-fixed-item.with-indicators.left').on("click", function(){
-      //   console.log('clicked-next')
+        console.log('clicked-next')
          $('.carousel').carousel('prev');
      });
 
      $('.carousel-fixed-item.with-indicators.right').on("click", function(){
-      //   console.log('clicked-previous')
+        console.log('clicked-previous')
          $('.carousel').carousel('next');
      });
 
