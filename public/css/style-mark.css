@@ -227,6 +227,11 @@ nav ul li {
     text-shadow: 2px 2px black;
 }
 
+/*carousel bottom dots*/
+.carousel .indicators .indicator-item {
+  width: 20px;
+  height: 20px;
+}
 
 @media screen and (max-width: 600px) {
   .carousel.carousel-slider {
@@ -238,6 +243,30 @@ nav ul li {
     height: 450px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .parallax-container {
+    height: 220px;
+  }
+
+  .card .waves-effect{
+    padding: 25px;
+  }
+  .card.two-techs .waves-effect{
+    padding: 5px 0;
+  }
+
+  .devicon-plain-2techs {
+    float: left;
+    max-width: 100px;
+
+    width: 75px;
+  }
+
+
+
+}
+
 /*
 hr {
   border-top: 1px solid #333;
