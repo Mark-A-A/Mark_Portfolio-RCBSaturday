@@ -176,6 +176,10 @@ nav ul li {
   cursor: pointer;
 }
 
+@@media only screen and (max-width: 600px) {
+
+}
+
 
 .carousel.carousel-slider .carousel-fixed-item.with-indicators{
   position: absolute;
@@ -184,6 +188,11 @@ nav ul li {
 }
 .carousel.carousel-slider .carousel-fixed-item.with-indicators a{
   background-image: url('../img/concrete_seamless/concrete_seamless.png');
+}
+
+.carousel-btn{
+  display: flex;
+  align-items: center;
 }
 .carousel.carousel-slider .carousel-fixed-item.with-indicators.left{
 
@@ -203,7 +212,7 @@ nav ul li {
 }
 .carousel.carousel-slider .carousel-item {
     width: 100%;
-    height: 100%;
+    height: inherit;
     min-height: 400px;
     position: absolute;
     top: 0;
@@ -221,7 +230,7 @@ nav ul li {
 
 @media screen and (max-width: 600px) {
   .carousel.carousel-slider {
-    height: 375px;
+    height: 275px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 850px) {
