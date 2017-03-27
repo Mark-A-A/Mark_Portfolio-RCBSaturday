@@ -9,7 +9,7 @@ $(document).ready(function(){
 console.log("loaded")
 
    $('.parallax').parallax();
-
+     $('.modal').modal();
 
    $('.carousel.carousel-slider').carousel({fullWidth: true});
    var int;
