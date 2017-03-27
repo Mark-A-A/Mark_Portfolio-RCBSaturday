@@ -16,23 +16,31 @@ $(document).ready(function(){
       var carousel_interval = 3000;
 
      function run(){
-         int = setInterval(function()
-         {
-             $('.carousel').carousel('next');
+        console.log("carousel running")
+         int = setInterval(function() {
+           $('.carousel').carousel('next');
          }, carousel_interval);
-     }
+     };
+
      function stop(){
-     clearInterval(int);
-     }
+        clearInterval(int);
+     };
+
      $('.carousel').hover(stop, run);
+
+     run();
+     stop();
+
      $('.carousel-fixed-item.with-indicators.left').on("click", function(){
       //   console.log('clicked-next')
          $('.carousel').carousel('prev');
      });
+
      $('.carousel-fixed-item.with-indicators.right').on("click", function(){
       //   console.log('clicked-previous')
          $('.carousel').carousel('next');
      });
+
  });
 
 
