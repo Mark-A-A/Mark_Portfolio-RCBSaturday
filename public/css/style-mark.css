@@ -70,6 +70,11 @@ nav ul li {
   line-height: 19px;
 }
 
+@media only screen and (min-width: 993px){
+  nav ul a {
+    font-size: 1rem;
+  }
+}
 
 /*
 JUMBOTRON HERO
@@ -210,6 +215,7 @@ JUMBOTRON HERO
 
   #skills .card .waves-effect{
     /*padding: 25px;*/
+    padding: 20px;
   }
   #skills .card.two-techs .waves-effect{
     /*padding: 5px 0;*/
@@ -226,6 +232,18 @@ JUMBOTRON HERO
 
 
 
+}
+
+@media only screen  and (min-width: 600px) and (max-width: 800px) {
+  #skills .card .waves-effect{
+    /*padding: 25px;*/
+    padding: 20px;
+  }
+  #skills .card.two-techs .waves-effect{
+    padding: 5px 0;
+    /*padding: 8px 25px;*/
+    /*padding: 5px ;*/
+  }
 }
 
 /*@media only screen and (max-width: 600px) {
