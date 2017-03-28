@@ -178,6 +178,66 @@ JUMBOTRON HERO
 }
 
 
+/*Skills */
+
+.card.two-techs {
+  /*height: 166px;*/
+}
+
+.devicon-plain {
+  max-width: 150px;
+}
+.devicon-plain-2techs {
+  float: left;
+  max-width: 50%;
+  height: 150px;
+}
+
+.devicon-plain path {
+  /*fill: black;*/
+}
+
+.devicon-react path {
+  fill: #09d9fe;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .parallax-container {
+    height: 220px;
+  }
+
+  #skills .card .waves-effect{
+    /*padding: 25px;*/
+  }
+  #skills .card.two-techs .waves-effect{
+    /*padding: 5px 0;*/
+    padding: 8px 25px;
+    /*padding: 5px ;*/
+  }
+
+  .devicon-plain-2techs {
+    float: left;
+    max-width: 100px;
+
+    width: 50%;
+  }
+
+
+
+}
+
+/*@media only screen and (max-width: 600px) {
+  .devicon-plain-2techs {
+    float: left;
+    max-width: 100px;
+
+    width: 75px;
+  }
+}*/
+
+
 
 
 /*
@@ -212,6 +272,38 @@ PORTFOLIO
 
 .tech-list-item{
   flex: 1;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 982px) {
+  .card .card-content {
+      padding: 15px;
+  }
+
+  .card .card-content .card-title{
+    /*font-size: 24px;*/
+  }
+
+  .card .card-image img {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+  .card .card-content {
+      padding: 10px;
+  }
+
+
+  .card .card-image img {
+    height: 220px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px){
+
+  .card .card-image img {
+    height: 220px;
+  }
 }
 
 
@@ -304,27 +396,14 @@ INTERESTS
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .parallax-container {
-    height: 220px;
-  }
 
-  .card .waves-effect{
-    padding: 25px;
-  }
-  .card.two-techs .waves-effect{
-    padding: 5px 0;
-  }
+.resume-wrapper .btn{
+  background-color: #2196F3;
+  background-color: black;
+}
 
-  .devicon-plain-2techs {
-    float: left;
-    max-width: 100px;
-
-    width: 75px;
-  }
-
-
-
+.resume-wrapper .btn:hover, .btn-large:hover{
+  background-color: gray;
 }
 
 /*
@@ -351,21 +430,6 @@ hr {
   border-radius: 3px;
 }*/
 
-.devicon-plain {
-  max-width: 150px;
-}
-.devicon-plain-2techs {
-  max-width: 100px;
-  height: 150px;
-}
-
-.devicon-plain path {
-  /*fill: black;*/
-}
-
-.devicon-react path {
-  fill: #09d9fe;
-}
 
 footer {
   color: black;
