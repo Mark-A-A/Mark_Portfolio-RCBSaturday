@@ -17,6 +17,11 @@ body {
   padding-bottom: 0;
 }
 
+
+/*
+NAVIGATION BAR
+*/
+
 .navbar .navbar-nav {
      display: inline-block;
   float: none;
@@ -65,8 +70,13 @@ nav ul li {
   line-height: 19px;
 }
 
+
+/*
+JUMBOTRON HERO
+*/
+
 .hero-unit {
-  background: url('../img/NASA-photo-ny.jpeg');;
+  background: url('../img/NASA-photo-ny-small.png');;
   /*background-image: url("https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d777797e2462dbf385043a4361644a24");*/
   background-size: cover;
   background-position: center center;
@@ -166,10 +176,60 @@ nav ul li {
   /*padding: 4rem 0;*/
   padding-bottom: 4em;
 }
+
+
+
+
+/*
+PORTFOLIO
+*/
+.card .card-title{
+  font-weight: 400;
+}
+.card .card-image img {
+    height: 185px;
+}
+
+.card .card-content {
+    /*padding: 20px;*/
+
+}
+
+.card i.right {
+  margin-left: 0;
+  width: 30px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.tech-used-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.tech-list-item{
+  flex: 1;
+}
+
+
+
+
+/*
+PARALLAX
+*/
 .parallax img {
   width: 100%;
   height: inherit;
 }
+
+
+/*
+INTERESTS
+*/
+
 
 .carousel.carousel-slider {
   height: 575px;
