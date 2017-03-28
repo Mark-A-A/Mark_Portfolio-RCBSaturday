@@ -181,7 +181,7 @@ JUMBOTRON HERO
 /*Skills */
 
 .card.two-techs {
-  height: 166px;
+  /*height: 166px;*/
 }
 
 .devicon-plain {
@@ -209,10 +209,12 @@ JUMBOTRON HERO
   }
 
   #skills .card .waves-effect{
-    padding: 25px;
+    /*padding: 25px;*/
   }
-  .card.two-techs .waves-effect{
-    padding: 5px 0;
+  #skills .card.two-techs .waves-effect{
+    /*padding: 5px 0;*/
+    padding: 8px 25px;
+    /*padding: 5px ;*/
   }
 
   .devicon-plain-2techs {
@@ -291,6 +293,13 @@ PORTFOLIO
       padding: 10px;
   }
 
+
+  .card .card-image img {
+    height: 220px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px){
 
   .card .card-image img {
     height: 220px;
@@ -385,6 +394,16 @@ INTERESTS
   .carousel.carousel-slider {
     height: 450px;
   }
+}
+
+
+.resume-wrapper .btn{
+  background-color: #2196F3;
+  background-color: black;
+}
+
+.resume-wrapper .btn:hover, .btn-large:hover{
+  background-color: gray;
 }
 
 /*
