@@ -281,15 +281,18 @@ PORTFOLIO
   font-size: 48px;
 }
 
-.tech-used-list{
+.tech-used-list {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
+  flex-wrap: wrap;
 }
 
-.tech-list-item{
+
+.tech-list-item {
   flex: 1;
+  margin-right: 5px;
 }
 
 @media only screen and (min-width: 750px) and (max-width: 982px) {
