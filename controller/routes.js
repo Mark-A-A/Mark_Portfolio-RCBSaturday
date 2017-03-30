@@ -30,11 +30,13 @@ router.post('/contact', function (req, res) {
   smtpTransporter.sendMail(mailOptions, function (error, response) {
       //Email not sent
       if (error) {
-          res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Error occured, message not sent.', err: true, page: 'contact' })
+        return console.log(error);
+          // res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Error occured, message not sent.', err: true, page: 'contact' })
       }
       //Yay!! Email sent
       else {
-          res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Message sent! Thank you.', err: false, page: 'contact' })
+          console.log('Message %s sent: %s', info.messageId, info.response);
+          // res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Message sent! Thank you.', err: false, page: 'contact' })
       }
   });
 });
