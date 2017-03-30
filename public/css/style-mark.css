@@ -424,6 +424,10 @@ INTERESTS
 }
 
 
+/*
+RESUME
+*/
+
 .resume-wrapper .btn{
   background-color: #2196F3;
   background-color: black;
@@ -431,6 +435,15 @@ INTERESTS
 
 .resume-wrapper .btn:hover, .btn-large:hover{
   background-color: gray;
+}
+
+div#modal1 {
+  width: auto;
+  width: 80vw;
+}
+.modal-content iframe {
+    height: 40vh;
+    width: 75vw;
 }
 
 /*
