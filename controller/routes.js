@@ -10,9 +10,9 @@ router.get('/', function (req, res) {
 });
 
 router.post('/contact', function (req, res) {
-  var mailOpts, smtpTrans;
+  var mailOptions, smtpTransporter;
   //Setup Nodemailer transport, I chose gmail. Create an application-specific password to avoid problems.
-  smtpTrans = nodemailer.createTransport('SMTP', {
+  smtpTransporter = nodemailer.createTransport('SMTP', {
       service: 'Gmail',
       auth: {
           user: "me@gmail.com",
@@ -21,13 +21,13 @@ router.post('/contact', function (req, res) {
   });
 
   //Mail options
-  mailOpts = {
+  mailOptions = {
       from: req.body.name + ' &lt;' + req.body.email + '&gt;', //grab form data from the request body object
       to: 'markawai.dev@gmail.com',
       subject: 'Mark Awai Portfolio Contact Form from Heroku',
       text: req.body.message
   };
-  smtpTrans.sendMail(mailOpts, function (error, response) {
+  smtpTransporter.sendMail(mailOptions, function (error, response) {
       //Email not sent
       if (error) {
           res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Error occured, message not sent.', err: true, page: 'contact' })
