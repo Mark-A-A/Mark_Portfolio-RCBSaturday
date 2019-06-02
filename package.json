@@ -4,8 +4,19 @@
   "description": "Portfolio Site for Mark A. ",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node ./dist/server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install:client": "cd client && npm install",
+    "install:server": "npm install",
+    "build:server": "babel server --out-dir dist",
+    "build:client": "cd client && npm run build",
+    "build": "npm run install:server && npm run build:server && npm run install:client && npm run build:client",
+    "seed": "cd server && cd config && node scripts/seedDB",
+    "restart": "npm run build:server && npm run start",
+    "heroku-postbuild": "npm run build",
+    "rebuild:nodeSass": "cd client && npm rebuild node-sass"
   },
   "repository": {
     "type": "git",
@@ -17,13 +28,22 @@
     "url": "https://github.com/Mark-A-A/Mark_Portfolio-RCBSaturday/issues"
   },
   "homepage": "https://github.com/Mark-A-A/Mark_Portfolio-RCBSaturday#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  },
   "dependencies": {
-    "body-parser": "^1.15.0",
-    "cheerio": "^0.20.0",
-    "express": "^4.13.4",
-    "express-session": "^1.13.0",
-    "method-override": "^2.3.5",
-    "mongoose": "^4.4.13",
-    "morgan": "^1.7.0"
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.3.16"
   }
 }
