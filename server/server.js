@@ -16,8 +16,9 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-// Use Express Router modules for routing
-app.use(routes);
+app.use(function (req, res) {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 
 app.listen(PORT, function () {
   console.log(`🌎 ==> API server now listening on port ${PORT}!`);
