@@ -17,7 +17,7 @@
     "seed": "cd server && cd config && node scripts/seedDB",
     "restart": "yarn run build:server && yarn run start",
     "heroku-postbuild": "yarn run build",
-    "rebuild:nodeSass": "cd client && yarn install --force node-sass"
+    "rebuild:nodeSass": "cd client && yarn add --force node-sass"
   },
   "repository": {
     "type": "git",
