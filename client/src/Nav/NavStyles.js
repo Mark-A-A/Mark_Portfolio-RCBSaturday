@@ -17,7 +17,8 @@ export const useNavStyles = makeStyles(theme => ({
   fab: {
     "background-color": "black",
     "border-radius": 0,
-    margin: theme.spacing(2),
+    "margin-top": theme.spacing(2),
+    "margin-bottom": theme.spacing(2),
     '&:hover': {
       background: "#d5d5d5",
     },
