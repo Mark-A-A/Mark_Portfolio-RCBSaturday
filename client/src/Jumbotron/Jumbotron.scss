@@ -1,0 +1,27 @@
+.portfolio .jumbotron-box {
+  margin-top: 0;
+  display: flex;
+  flex: 1 100%;
+
+  section.jumbotron {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    background-size: cover;
+    background-image: url('/img/NASA-photo-ny-small-optimized.png');
+    width: 100%;
+    height: 90vh;
+    padding: 0 5vw;
+
+    .jumbotron-phrase {
+      max-width: 70%;
+      font-weight: 400;
+      color: white;
+      // text-shadow: 2px 2px #a1b191;
+      text-shadow: 2px 2px #6e544c;
+    }
+  }
+
+
+}
